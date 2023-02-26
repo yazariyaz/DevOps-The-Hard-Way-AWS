@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('download and install requirements') {
+      steps {
+        sh 'pip3 install -r requirements.txt'
+      }
+    }
+
   }
 }
