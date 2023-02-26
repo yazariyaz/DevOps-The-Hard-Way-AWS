@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('pull files') {
       steps {
-        sh 'git https://github.com/yazariyaz/DevOps-The-Hard-Way-AWS.git'
+        sh 'git clone https://github.com/yazariyaz/DevOps-The-Hard-Way-AWS.git'
       }
     }
 
