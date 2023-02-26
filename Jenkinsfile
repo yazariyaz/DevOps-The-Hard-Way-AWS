@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('pull files') {
       steps {
-        git 'https://github.com/yazariyaz/DevOps-The-Hard-Way-AWS.git'
+        git(url: 'https://github.com/yazariyaz/DevOps-The-Hard-Way-AWS.git', branch: 'master')
       }
     }
 
