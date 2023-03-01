@@ -15,7 +15,7 @@ pipeline {
 
     stage('run app') {
       steps {
-        sh 'cd ./Docker/app && python3 app.py'
+        sh 'cd ./Docker/app && python3 app.py &'
       }
     }
 
